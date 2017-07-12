@@ -626,7 +626,7 @@ class ROSLaunchRunner(object):
             # hook in our listener aggregator
             self.remote_runner.add_process_listener(self.listeners)            
 
-        # start up the core: master + core nodes defined in core.xml
+        # start up the core: master + core nodes defined in roscore.xml
         self._launch_master()
         self._launch_core_nodes()        
         
